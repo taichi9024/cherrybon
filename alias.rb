@@ -15,27 +15,33 @@
 # p u.name
 # p u.new_hello
 
-class Tempo
-    include Comparable
+# class Tempo
+#     include Comparable
 
-    attr_reader :bpm
+#     attr_reader :bpm
     
-    def initialize(bpm)
-        @bpm = bpm
-    end
+#     def initialize(bpm)
+#         @bpm = bpm
+#     end
 
-    def <=>(other)
-        if other.is_a?(Tempo)
-            bpm <=> other.bpm
-        else
-            nil
-        end
-    end
+#     def <=>(other)
+#         if other.is_a?(Tempo)
+#             bpm <=> other.bpm
+#         else
+#             nil
+#         end
+#     end
 
-    def inspect
-        "#{bpm} bpm"
-    end
+#     def inspect
+#         "#{bpm} bpm"
+#     end
+# end
+
+# t120 = Tempo.new(120)
+# t180 = Tempo.new(180)
+
+proc = Proc.new do |name|
+    puts "hey #{name}"
 end
 
-t120 = Tempo.new(120)
-t180 = Tempo.new(180)
+proc.call("hoge")
