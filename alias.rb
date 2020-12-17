@@ -40,8 +40,14 @@
 # t120 = Tempo.new(120)
 # t180 = Tempo.new(180)
 
-proc = Proc.new do |name|
-    puts "hey #{name}"
+# proc = Proc.new do |name|
+#     puts "hey #{name}"
+# end
+
+# proc.call("hoge")
+
+proc = Proc.new do
+    puts "hey"
 end
 
-proc.call("hoge")
+proc.call
