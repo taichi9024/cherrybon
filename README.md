@@ -1,1 +1,1 @@
-# ruby_practice
+# ruby チェリー本躓いた部分
